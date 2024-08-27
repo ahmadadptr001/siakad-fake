@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Data Perkembangan Diri</title>
+      <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../node_modules/boxicons/css/boxicons.min.css">
+      <link rel="stylesheet" href="style/css/index.css">
+</head>
+
+<body class="body p-0 m-0 overflow-hidden" data-bs-theme="dark">
+
+      <div class="navbar bg-success px-3">
+                  
+            <a href="#" class="navbar-brand">
+                  <i class="bx bxs-school"></i>
+                  <span class="text-brand">
+                        <h6>kampus unusra</h6>
+                        <svg class="wave" viewBox="0 0 500 100" preserveAspectRatio="none">
+                              <path d="M0,20 Q185, 60 55,20 T550,20" stroke-width="6" />
+                        </svg>
+                  </span>
+            </a>
+
+            <div class="navbar-bx-icon d-flex align-items-center gap-3">
+                  <button class="btn btn-success p-0  m-0 navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuDashboard" aria-controls="menuDashboard">
+                        <i class="bx bx-menu fs-4 d-flex"></i>
+                  </button>
+                  <i class="bx rounded-circle p-1 fs-6 bxs-moon"></i>
+            </div>
+      </div>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="menuDashboard" aria-labelledby="labelDashboard">
+            <div class="offcanvas-header">
+                  <h5 id="menuLabel" class="offcanvas-title">
+                        <i class="bx bxs-user"></i>
+                        Ahmad Adptr
+                  </h5>
+                  <div class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></div>
+            </div>
+            <div class="offcanvas-body">
+                  <a href="#" class="nav-link"><i class="bx bxs-dashboard p-2"></i>Dashboard</a>
+                  <div class="dropdown ">
+                        <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="bx bxs-graduation p-2"></i>Mahasiswa
+                        </a>
+
+                        <ul class="dropdown-menu p-3 pt-1 mt-2">
+                              <li><a href="" class="dropdown-item dropdown-tugas">Tugas</a></li>
+                              <li><a href="" class="dropdown-item dropdown-jadwal">Jadwal</a></li>
+                              <li><a href="" class="dropdown-item dropdown-khs">Nilai kHS</a></li>
+                              <li><a href="" class="dropdown-item dropdown-uas">Nilai UAS</a></li>
+                        </ul>
+                  </div>
+                  <hr>
+                  <div class="dropdown dropdown-kontakAdmin">
+                        <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="bx bxs-phone p-2"></i>Hubungi Admin
+                        </a>
+
+                        <ul class="dropdown-menu p-3 pt-1 mt-2 align-items-center">
+                              <li><a href="" class="dropdown-item"><i class="bx bxl-whatsapp"></i></a></li>
+                              <li><a href="" class="dropdown-item"><i class="bx bxl-facebook"></i></a></li>
+                              <li><a href="" class="dropdown-item"><i class="bx bxl-instagram"></i></a></li>
+                              <li><a href="" class="dropdown-item"><i class="bx bxl-tiktok"></i></a></li>
+                        </ul>
+                  </div>
+                  
+            </div>
+      </div>
+
+      <section class="main-content container-fluid p-1 px-2">
+            <div class="navbar px-5 pb-4 d-sm-flex d-block text-center align-items-center">
+                  <p class="m-0 mt-3">Selamat datang <span>Ahmad Adptr</span></p>
+                  <p class="text-muted m-0 mt-3" style='font-family: "Edu VIC WA NT Beginner";'>Dashboard</p>
+            </div>
+            
+            <div class="row mt-4 p-3">
+                  <div class="nilai-ips col-md-6 col-12">
+                        <canvas id="ips"></canvas>
+                  </div>
+                  <div class="col-md-6 col-12">
+                        <div class="nilai-ipk">
+                              <canvas id="ipk"></canvas>
+                        </div>
+                        <div class="nilai-ujian-tertinggi">
+                              <canvas id="ujian-tertinggi"></canvas>
+                        </div>
+                  </div>
+            </div>
+      </section>
+      
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
+      <script src="../node_modules/chart.js/dist/chart.umd.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="js/index.js"></script>
+</body>
+
+</html>

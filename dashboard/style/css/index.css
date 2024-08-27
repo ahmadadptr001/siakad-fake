@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+* {
+      font-family: poppins;
+      font-size: .9rem;
+      list-style: none;
+}
+
+.navbar-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: white !important;
+}
+
+.navbar-brand h6{
+      font-size: 1rem;
+      margin: 0;
+}
+
+.text-brand {
+      position: relative;
+}
+
+.text-brand .wave {
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      fill: none;
+      stroke: rgb(255, 255, 255);
+}
+
+.text-brand .wave path {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: draw 2s infinite linear alternate;
+}
+
+@keyframes draw {
+      from {
+            stroke-dashoffset: 1000;
+      }
+      to {
+            stroke-dashoffset: 0;
+      }
+}
+
+.navbar-bx-icon i {
+      font-weight: 550;
+      color: white !important;
+}
+
+.navbar-toggler {
+      border: none;
+}
+
+.navbar-toggler:focus {
+      box-shadow: none;
+      border: none;
+}
+
+.bxs-moon {
+      background-color: rgb(115, 179, 253);
+      color: white;
+}
+
+.bxs-sun {
+      background-color: rgb(255, 230, 0);
+      color: rgb(255, 255, 255);
+}
+
+.bxs-school {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: rgb(138, 236, 108);
+}
+
+.offcanvas {
+      transition: .5s ease-in-out;
+}
+
+.offcanvas h5 {
+      font-size: 1.1rem;
+}
+
+.offcanvas .bxs-user {
+      font-size: 1.2rem;
+}
+
+
+.dropdown-item a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.dropdown-item i {
+      padding: 5px;
+      margin: 0;
+}
+
+.dropdown-kontakAdmin .dropdown-menu *{
+      display: inline;
+      font-size: 1.2rem;
+      padding: 3px;
+}
+
+
+.main-content .navbar {
+      border-bottom: 1px solid gray;
+}
+
+.main-content p span {
+      color: #fd489c;
+}
+
+.main-content .navbar .text-muted {
+      font-size: 1.1rem;
+}
+
+.main-content canvas{
+      background-color: rgba(0, 0, 0, 0.014);
+}

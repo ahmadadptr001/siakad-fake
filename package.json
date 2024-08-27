@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "boxicons": "^2.1.4",
+    "chart": "^0.1.2",
+    "chart.js": "^4.4.4",
+    "i": "^0.3.7",
+    "jquery": "^3.7.1",
+    "react-countup": "^6.5.3"
+  }
+}
